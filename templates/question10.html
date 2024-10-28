@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h2>Convert Celsius to Fahrenheit</h2>
+    <form method="POST" action="/">
+        <label for="celsius">Enter Temperature in Celsius:</label>
+        <input type="number" step="0.1" id="celsius" name="celsius" required>
+        <button type="submit">Convert</button>
+    </form>
+    
+    <h3>Converted Temperature: {{ fahrenheit }}°F</h3>
+</body>
+</html>

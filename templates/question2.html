@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio</title>
+</head>
+
+<body>
+    <h1>Personal Bio</h1>
+    <p><strong>Name:</strong> {{ info.name }}</p>
+    <p><strong>Age:</strong> {{ info.age }}</p>
+    <p><strong>Hobbies:</strong></p>
+    <ul>
+        {% for hobby in info.hobbies %}
+        <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
